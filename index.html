@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Wali Uddin Masud | Skin Specialist, Hair Specialist & Venereologist (STD Specialist)</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Dr. Wali Uddin Masud | Skin Specialist, Hair Specialist & Venereologist">
+  <meta name="description" content="Consultant Dermatologist & Venereologist in Dhaka & Chittagong. Expert treatment for Acne, Hair Loss PRP, Fungal Infection, Allergy, Eczema, Psoriasis, STDs, and Cosmetic Dermatology. Book online serial now.">
+  <meta name="keywords" content="Dermatologist Dhaka, Skin Specialist Bangladesh, Hair Fall PRP Doctor, Venereologist Dhaka, STD Specialist Bangladesh, Dr Wali Uddin Masud, Skin Doctor Dhanmondi">
+  <meta name="author" content="Dr. Wali Uddin Masud">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dr. Wali Uddin Masud | Skin, Hair & STD Specialist">
+  <meta property="og:description" content="12+ Years Experienced Consultant Dermatologist & Venereologist in Bangladesh. FDA approved treatment for skin, hair loss, and venereal diseases.">
+  <meta property="og:image" content="images/doctor.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#0F4C81',
+              dark: '#0A3258',
+              light: '#EBF3FA',
+              accent: '#0EA5E9'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-dark text-white text-xs py-2 px-4 border-b border-sky-900/50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span data-en="Online Serial Booking & Daily Chamber Consultation Available" data-bn="অনলাইন সিরিয়াল বুকিং ও প্রতিদিন চেম্বারে রোগী দেখা হচ্ছে">
+          Online Serial Booking & Daily Chamber Consultation Available
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-sky-200">
+        <a href="tel:09611778899" class="hover:text-white transition flex items-center gap-1">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>09611-778899</span>
+        </a>
+        <a href="https://wa.me/8801711002233" target="_blank" class="hover:text-emerald-300 transition flex items-center gap-1">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>WhatsApp Helpline</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-brand-primary text-white flex items-center justify-center font-black text-xl shadow-md group-hover:bg-sky-600 transition">
+            <i data-lucide="stethoscope" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="font-extrabold text-lg sm:text-xl text-slate-900 block leading-tight tracking-tight">
+              Dr. Wali Uddin Masud
+            </span>
+            <span class="text-xs text-sky-600 font-medium block" data-en="Skin, Hair & Venereologist Specialist" data-bn="চর্ম, যৌন ও চুল রোগ বিশেষজ্ঞ">
+              Skin, Hair & Venereologist Specialist
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+          <a href="#hero" class="hover:text-brand-primary transition" data-en="Home" data-bn="হোম">Home</a>
+          <a href="#about" class="hover:text-brand-primary transition" data-en="About Doctor" data-bn="ডাক্তার পরিচিতি">About Doctor</a>
+          <a href="#chambers" class="hover:text-brand-primary transition" data-en="Chambers" data-bn="চেম্বারসমূহ">Chambers</a>
+          <a href="#services" class="hover:text-brand-primary transition" data-en="Services" data-bn="সেবাসমূহ">Services</a>
+          <a href="#why-choose" class="hover:text-brand-primary transition" data-en="Why Choose" data-bn="কেন বেছে নেবেন">Why Choose</a>
+          <a href="#blogs" class="hover:text-brand-primary transition" data-en="Health Blog" data-bn="স্বাস্থ্য ব্লগ">Health Blog</a>
+          <a href="#gallery" class="hover:text-brand-primary transition" data-en="Gallery" data-bn="গ্যালারি">Gallery</a>
+          <a href="#faq" class="hover:text-brand-primary transition" data-en="FAQ" data-bn="প্রশ্নোত্তর">FAQ</a>
+        </nav>
+
+        <!-- Right Side Actions & Language Switcher -->
+        <div class="hidden sm:flex items-center gap-3">
+          <!-- Language Toggle Switcher -->
+          <div class="bg-slate-100 p-1 rounded-lg flex items-center border border-slate-200 text-xs font-bold">
+            <button id="btn-lang-en" onclick="setLanguage('en')" class="px-2.5 py-1 rounded-md transition">EN</button>
+            <button id="btn-lang-bn" onclick="setLanguage('bn')" class="px-2.5 py-1 rounded-md transition">বাংলা</button>
+          </div>
+
+          <a href="#appointment-section" class="py-2.5 px-5 bg-brand-primary text-white rounded-xl text-sm font-bold shadow-md hover:bg-sky-900 transition flex items-center gap-2">
+            <i data-lucide="calendar-plus" class="w-4 h-4"></i>
+            <span data-en="Book Serial" data-bn="সিরিয়াল বুকিং">Book Serial</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-700 rounded-lg hover:bg-slate-100">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-3 text-sm font-semibold text-slate-700">
+      <a href="#hero" class="block py-2 border-b border-slate-100" data-en="Home" data-bn="হোম">Home</a>
+      <a href="#about" class="block py-2 border-b border-slate-100" data-en="About Doctor" data-bn="ডাক্তার পরিচিতি">About Doctor</a>
+      <a href="#chambers" class="block py-2 border-b border-slate-100" data-en="Chambers" data-bn="চেম্বারসমূহ">Chambers</a>
+      <a href="#services" class="block py-2 border-b border-slate-100" data-en="Services" data-bn="সেবাসমূহ">Services</a>
+      <a href="#blogs" class="block py-2 border-b border-slate-100" data-en="Health Blog" data-bn="স্বাস্থ্য ব্লগ">Health Blog</a>
+      <a href="#appointment-section" class="block py-2 text-brand-primary font-bold" data-en="Book Serial Now" data-bn="এখনই সিরিয়াল নিন">Book Serial Now</a>
+      
+      <div class="pt-2 flex items-center justify-between">
+        <span class="text-xs text-slate-500">Language:</span>
+        <div class="bg-slate-100 p-1 rounded-lg flex items-center border border-slate-200 text-xs font-bold">
+          <button onclick="setLanguage('en')" class="px-3 py-1">English</button>
+          <button onclick="setLanguage('bn')" class="px-3 py-1">বাংলা</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero-bg relative overflow-hidden py-12 md:py-20 lg:py-24">
+    <div class="hero-glow-ring top-10 left-10"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Text -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold uppercase tracking-wider border border-sky-200">
+            <i data-lucide="shield-check" class="w-4 h-4 text-sky-600"></i>
+            <span data-en="BMDC Reg No: A-54892 • Specialist Dermatologist" data-bn="বিএমডিসি রেজিঃ এ-৫৪৮৯২ • চর্ম ও যৌন রোগ বিশেষজ্ঞ">
+              BMDC Reg No: A-54892 • Specialist Dermatologist
+            </span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.15] tracking-tight">
+            <span data-en="Trusted Skin, Hair & Venereal Disease Specialist" data-bn="ত্বক, চুল ও যৌন স্বাস্থ্যের নির্ভরযোগ্য বিশেষজ্ঞ চিকিৎসা">
+              Trusted Skin, Hair & Venereal Disease Specialist
+            </span>
+          </h1>
+
+          <!-- Subtext -->
+          <p class="text-slate-600 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0" data-en="Providing modern, evidence-based treatments for acne, hair loss PRP, fungal infection, chronic eczema, psoriasis, and confidential STD care in Bangladesh." data-bn="ব্রণ, চুল পড়া রোধে পিআরপি થেরাপি, ছত্রাক সংক্রমণ, সোরাইসিস, একজিমা এবং যৌন ব্যাধির গোপনীয় ও অত্যাধুনিক বিজ্ঞানসম্মত চিকিৎসা।">
+            Providing modern, evidence-based treatments for acne, hair loss PRP, fungal infection, chronic eczema, psoriasis, and confidential STD care in Bangladesh.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#appointment-section" class="w-full sm:w-auto py-3.5 px-8 bg-brand-primary text-white rounded-xl font-bold shadow-lg shadow-sky-900/20 hover:bg-sky-900 transition flex items-center justify-center gap-3 text-base">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              <span data-en="Book Appointment" data-bn="অনলাইন সিরিয়াল বুক করুন">Book Appointment</span>
+            </a>
+            <a href="https://wa.me/8801711002233?text=Hello%20Dr.%20Wali%20Uddin%20Masud%20Chamber,%20I%20want%20to%20book%20an%20appointment" target="_blank" class="w-full sm:w-auto py-3.5 px-6 bg-emerald-500 text-white rounded-xl font-bold hover:bg-emerald-600 transition flex items-center justify-center gap-3 text-base">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span data-en="WhatsApp Serial" data-bn="হোয়াটসঅ্যাপ সিরিয়াল">WhatsApp Serial</span>
+            </a>
+            <a href="tel:09611778899" class="w-full sm:w-auto py-3.5 px-6 bg-white text-slate-800 border border-slate-300 rounded-xl font-bold hover:bg-slate-50 transition flex items-center justify-center gap-3 text-base">
+              <i data-lucide="phone-call" class="w-5 h-5 text-sky-600"></i>
+              <span data-en="Call Helpline" data-bn="কল করুন">Call Helpline</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Bar -->
+          <div class="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-4 max-w-xl mx-auto lg:mx-0 text-center">
+            <div class="p-3 bg-white rounded-xl border border-slate-100 shadow-sm">
+              <span class="block text-2xl font-extrabold text-brand-primary">12+</span>
+              <span class="text-xs text-slate-500 font-medium" data-en="Years Experience" data-bn="বছরের অভিজ্ঞতা">Years Experience</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-100 shadow-sm">
+              <span class="block text-2xl font-extrabold text-brand-primary">18,500+</span>
+              <span class="text-xs text-slate-500 font-medium" data-en="Satisfied Patients" data-bn="সুস্থ রোগী">Satisfied Patients</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-100 shadow-sm">
+              <span class="block text-2xl font-extrabold text-emerald-600">99.2%</span>
+              <span class="text-xs text-slate-500 font-medium" data-en="Success Rate" data-bn="সফলতার হার">Success Rate</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Doctor Portrait & Floating Card -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-full max-w-md">
+            
+            <!-- Background Glow & Frame -->
+            <div class="absolute -inset-2 bg-gradient-to-r from-sky-400 to-brand-primary rounded-3xl blur-lg opacity-30"></div>
+            
+            <!-- Doctor Image -->
+            <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-slate-100 overflow-hidden">
+              <img src="images/doctor.png" alt="Dr. Wali Uddin Masud" class="w-full h-auto rounded-2xl object-cover" width="500" height="600">
+              
+              <!-- Floating Live Status Badge -->
+              <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-slate-200 shadow-xl flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-xl shrink-0">
+                  <i data-lucide="user-check" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 text-sm">Dr. Wali Uddin Masud</h4>
+                  <p class="text-xs text-emerald-600 font-semibold flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-emerald"></span>
+                    <span data-en="Chamber Consultation Open Today" data-bn="আজ চেম্বারে সিরিয়াল খোলা আছে">Chamber Consultation Open Today</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT DOCTOR SECTION -->
+  <section id="about" class="py-16 md:py-24 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image & Qualifications Badge -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+            <img src="images/clinic.png" alt="Dermatology Clinic Consultation" class="w-full h-auto object-cover">
+          </div>
+
+          <!-- Credentials Box -->
+          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-base flex items-center gap-2">
+              <i data-lucide="graduation-cap" class="w-5 h-5 text-sky-600"></i>
+              <span data-en="Academic Qualifications" data-bn="শিক্ষাগত যোগ্যতা ও ডিগ্রি">Academic Qualifications</span>
+            </h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span><strong>MBBS (Dhaka):</strong> Dhaka Medical College Hospital</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span><strong>BCS (Health):</strong> 33rd BCS Health Cadre</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span><strong>DDV (BSMMU):</strong> Bangabandhu Sheikh Mujib Medical University</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span><strong>FCPS (Dermatology):</strong> Bangladesh College of Physicians and Surgeons</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Biography & Expertise -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="award" class="w-4 h-4 text-sky-600"></i>
+            <span data-en="About Dr. Wali Uddin Masud" data-bn="ডাক্তার সম্পর্কিত বিস্তারিত">About Dr. Wali Uddin Masud</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            <span data-en="Dedicated to Restoring Healthy Skin, Hair & Vitality" data-bn="সুস্থ ত্বক, প্রাণবন্ত চুল ও আস্থা ফিরিয়ে আনতে আমরা প্রতিশ্রুতিবদ্ধ">
+              Dedicated to Restoring Healthy Skin, Hair & Vitality
+            </span>
+          </h2>
+
+          <p class="text-slate-600 text-base leading-relaxed" data-en="Dr. Wali Uddin Masud is a renowned Consultant Dermatologist, Hair Specialist, and Venereologist in Bangladesh. With over 12 years of specialized clinical practice, he has successfully diagnosed and treated thousands of complex skin conditions, chronic hair fall, sexually transmitted infections, and aesthetic dermatology cases using internationally approved protocols." data-bn="ডাঃ ওয়ালী উদ্দিন মাসুদ বাংলাদেশের একজন বিশিষ্ট চর্ম, চুল ও যৌন রোগ বিশেষজ্ঞ। ১২ বছরেরও বেশি সময় ধরে তিনি হাজার হাজার রোগীকে আধুনিক লেজার, পিআরপি ও চিকিৎসাবিজ্ঞানের সঠিক নিয়মে সুস্থ করে তুলেছেন।">
+            Dr. Wali Uddin Masud is a renowned Consultant Dermatologist, Hair Specialist, and Venereologist in Bangladesh. With over 12 years of specialized clinical practice, he has successfully diagnosed and treated thousands of complex skin conditions, chronic hair fall, sexually transmitted infections, and aesthetic dermatology cases using internationally approved protocols.
+          </p>
+
+          <!-- Expertise Grid -->
+          <div>
+            <h4 class="font-bold text-slate-900 text-base mb-3" data-en="Core Areas of Expertise:" data-bn="বিশেষায়িত অভিজ্ঞতার ক্ষেত্রসমূহ:">Core Areas of Expertise:</h4>
+            <div id="expertise-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <div class="p-3 bg-sky-50 rounded-lg border border-sky-100 flex items-center gap-2 font-medium text-slate-800">
+                <i data-lucide="sparkles" class="w-4 h-4 text-sky-600"></i>
+                <span data-en="Acne & Acne Scar Resurfacing" data-bn="ব্রণ ও ব্রণের মেচেতার দাগ">Acne & Acne Scar Resurfacing</span>
+              </div>
+              <div class="p-3 bg-sky-50 rounded-lg border border-sky-100 flex items-center gap-2 font-medium text-slate-800">
+                <i data-lucide="user-check" class="w-4 h-4 text-sky-600"></i>
+                <span data-en="PRP Hair Regeneration Therapy" data-bn="চুল পড়া রোধে পিআরপি থেরাপি">PRP Hair Regeneration Therapy</span>
+              </div>
+              <div class="p-3 bg-sky-50 rounded-lg border border-sky-100 flex items-center gap-2 font-medium text-slate-800">
+                <i data-lucide="shield-alert" class="w-4 h-4 text-sky-600"></i>
+                <span data-en="Fungal & Ringworm Eradication" data-bn="দাদ ও ছত্রাক সংক্রমণের স্থায়ী চিকিৎসা">Fungal & Ringworm Eradication</span>
+              </div>
+              <div class="p-3 bg-sky-50 rounded-lg border border-sky-100 flex items-center gap-2 font-medium text-slate-800">
+                <i data-lucide="heart-pulse" class="w-4 h-4 text-sky-600"></i>
+                <span data-en="100% Confidential STD / STI Care" data-bn="যৌন ব্যাধির গোপনীয় চিকিৎসা">100% Confidential STD / STI Care</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAMBERS / CLINIC LOCATIONS SECTION -->
+  <section id="chambers" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="building" class="w-3.5 h-3.5 inline mr-1"></i>
+          <span data-en="Chamber Locations & Timings" data-bn="চেম্বার সমূহের ঠিকানা ও সময়সূচী">Chamber Locations & Timings</span>
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-en="Visit Dr. Wali Uddin Masud at Chambers" data-bn="চেম্বারে সিরিয়াল নিয়ে সরাসরি ডাক্তার দেখান">
+          Visit Dr. Wali Uddin Masud at Chambers
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base" data-en="Consultation available in Dhaka Dhanmondi & Chittagong. Book your serial in advance to avoid waiting." data-bn="ঢাকা ধানমন্ডি এবং চট্টগ্রাম আগ্রাবাদ চেম্বারে রোগী দেখা হয়। দীর্ঘ লাইন এড়াতে অগ্রিম সিরিয়াল বুক করুন।">
+          Consultation available in Dhaka Dhanmondi & Chittagong. Book your serial in advance to avoid waiting.
+        </p>
+      </div>
+
+      <!-- Chambers Grid -->
+      <div id="chambers-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Rendered via js/main.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-16 md:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="activity" class="w-3.5 h-3.5 inline mr-1"></i>
+          <span data-en="Specialized Medical Treatments" data-bn="বিশেষায়িত ডার্মাটোলজি সেবাসমূহ">Specialized Medical Treatments</span>
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-en="Comprehensive Skin, Hair & Venereology Care" data-bn="ত্বক, চুল ও চর্ম রোগের সর্বাধুনিক চিকিৎসা">
+          Comprehensive Skin, Hair & Venereology Care
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base" data-en="Click on any treatment card to view clinical details, symptoms, and customized treatment options." data-bn="যে কোনো সেবায় ক্লিক করে লক্ষণ ও আধুনিক চিকিৎসা পদ্ধতি সম্পর্কে জানুন।">
+          Click on any treatment card to view clinical details, symptoms, and customized treatment options.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div id="services-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered via js/main.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE SECTION -->
+  <section id="why-choose" class="py-16 md:py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <span class="inline-block px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 text-xs font-bold uppercase tracking-wider border border-sky-500/30">
+          <span data-en="Patient First Commitment" data-bn="রোগী কেন্দ্রিক চিকিৎসাসেবা">Patient First Commitment</span>
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight" data-en="Why Choose Dr. Wali Uddin Masud?" data-bn="কেন ডাঃ ওয়ালী উদ্দিন মাসুদ-কে বেছে নেবেন?">
+          Why Choose Dr. Wali Uddin Masud?
+        </h2>
+      </div>
+
+      <div id="why-choose-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered via js/main.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HEALTH BLOG SECTION -->
+  <section id="blogs" class="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="book-open" class="w-3.5 h-3.5 inline mr-1"></i>
+          <span data-en="Patient Education & Tips" data-bn="স্বাস্থ্য সচেতনতা ও টিপস">Patient Education & Tips</span>
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-en="Latest Skin & Hair Care Articles" data-bn="চর্মরোগ ও চুলের পরিচর্যার গুরুত্বপূর্ণ নিবন্ধ">
+          Latest Skin & Hair Care Articles
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base" data-en="Educate yourself on medical facts, hair fall prevention, and skin care routines written by Dr. Masud." data-bn="ডাক্তার সাহেবের পরামর্শকৃত সঠিক চর্ম সচেতনতা মূলক আর্টিকেল পড়ুন।">
+          Educate yourself on medical facts, hair fall prevention, and skin care routines written by Dr. Masud.
+        </p>
+      </div>
+
+      <!-- Blogs Grid -->
+      <div id="blogs-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered via js/main.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PATIENT TESTIMONIALS & GOOGLE REVIEWS SECTION -->
+  <section id="testimonials" class="py-16 md:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold uppercase tracking-wider mb-2">
+            <span data-en="Patient Reviews" data-bn="রোগীদের অভিজ্ঞতা ও রিভিউ">Patient Reviews</span>
+          </span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight" data-en="Patient Success Stories" data-bn="রোগীদের সন্তুষ্টির গল্প">
+            Patient Success Stories
+          </h2>
+        </div>
+
+        <!-- Google Reviews Badge -->
+        <div id="google-reviews-badge">
+          <!-- Rendered via js/main.js -->
+        </div>
+      </div>
+
+      <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Rendered via js/main.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+        <span class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="image" class="w-3.5 h-3.5 inline mr-1"></i>
+          <span data-en="Clinic & Activities" data-bn="চেম্বার ও অন্যান্য ছবি">Clinic & Activities</span>
+        </span>
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight" data-en="Photo Gallery" data-bn="ছবি গ্যালারি">
+          Photo Gallery
+        </h2>
+      </div>
+
+      <!-- Gallery Filter Tabs -->
+      <div class="flex items-center justify-center gap-2 mb-8 flex-wrap">
+        <button class="gallery-tab px-4 py-2 rounded-xl text-xs font-bold border border-slate-200 transition" data-filter="all" data-en="All Photos" data-bn="সব ছবি">All Photos</button>
+        <button class="gallery-tab px-4 py-2 rounded-xl text-xs font-bold border border-slate-200 transition" data-filter="clinic" data-en="Clinic & Setup" data-bn="চেম্বার ও ক্লিনিক">Clinic & Setup</button>
+        <button class="gallery-tab px-4 py-2 rounded-xl text-xs font-bold border border-slate-200 transition" data-filter="procedure" data-en="Treatment Rooms" data-bn="চিকিৎসা রুম">Treatment Rooms</button>
+      </div>
+
+      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Rendered via js/main.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-16 md:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12 space-y-3">
+        <span class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="help-circle" class="w-3.5 h-3.5 inline mr-1"></i>
+          <span data-en="Got Questions?" data-bn="সাধারণ প্রশ্নাবলী">Got Questions?</span>
+        </span>
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight" data-en="Frequently Asked Questions" data-bn="রোগীদের সচরাচর জিজ্ঞাসিত প্রশ্ন">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div id="faq-accordion" class="space-y-4">
+        <!-- Rendered via js/main.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- APPOINTMENT BOOKING SECTION -->
+  <section id="appointment-section" class="py-16 md:py-24 bg-gradient-to-br from-brand-primary to-brand-dark text-white relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+        <span class="inline-block px-3 py-1 rounded-full bg-sky-400/20 text-sky-200 text-xs font-bold uppercase tracking-wider border border-sky-400/30">
+          <span data-en="Online Serial Booking" data-bn="অনলাইন সিরিয়াল বুকিং">Online Serial Booking</span>
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight" data-en="Book Your Serial Consultation" data-bn="সহজেই চেম্বার সিরিয়াল কনফার্ম করুন">
+          Book Your Serial Consultation
+        </h2>
+        <p class="text-sky-100 text-sm" data-en="Fill out the patient request form below to receive immediate WhatsApp and SMS confirmation." data-bn="নিচের ফর্মটি পূরণ করে এখনই সিরিয়াল কনফার্মেশনের জন্য পাঠায়ে দিন।">
+          Fill out the patient request form below to receive immediate WhatsApp and SMS confirmation.
+        </p>
+      </div>
+
+      <!-- Booking Form Card -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 text-slate-900 shadow-2xl">
+        <form onsubmit="handleAppointmentSubmit(event)" class="space-y-6">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-2" data-en="Patient Full Name *" data-bn="রোগীর নাম *">Patient Full Name *</label>
+              <input type="text" id="appt-name" required placeholder="e.g. Tanvir Ahmed" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-500 focus:bg-white transition outline-none text-sm">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-2" data-en="Mobile Phone Number *" data-bn="মোবাইল নম্বর *">Mobile Phone Number *</label>
+              <input type="tel" id="appt-phone" required placeholder="017XXXXXXXX" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-500 focus:bg-white transition outline-none text-sm">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-2" data-en="Select Chamber *" data-bn="চেম্বার নির্বাচন করুন *">Select Chamber *</label>
+              <select id="appt-chamber" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-500 focus:bg-white transition outline-none text-sm font-medium">
+                <!-- Rendered dynamically -->
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-2" data-en="Treatment Category" data-bn="রোগের বিষয়">Treatment Category</label>
+              <select id="appt-service" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-500 focus:bg-white transition outline-none text-sm font-medium">
+                <!-- Rendered dynamically -->
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-2" data-en="Preferred Date *" data-bn="পছন্দের তারিখ *">Preferred Date *</label>
+              <input type="date" id="appt-date" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-500 focus:bg-white transition outline-none text-sm font-medium">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-2" data-en="Problem Description (Optional)" data-bn="রোগের সমস্যা (সংক্ষেপে)">Problem Description (Optional)</label>
+            <textarea id="appt-problem" rows="3" placeholder="Briefly describe your skin, hair or allergy issue..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-500 focus:bg-white transition outline-none text-sm"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-base rounded-xl transition shadow-lg flex items-center justify-center gap-3">
+            <i data-lucide="send" class="w-5 h-5"></i>
+            <span data-en="Confirm Serial via WhatsApp & Instant SMS" data-bn="হোয়াটসঅ্যাপের মাধ্যমে সিরিয়াল বুক করুন">Confirm Serial via WhatsApp & Instant SMS</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & GOOGLE MAP SECTION -->
+  <section id="contact" class="py-16 md:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Contact Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold uppercase tracking-wider">
+            <span data-en="Get in Touch" data-bn="যোগাযোগ ও ঠিকানা">Get in Touch</span>
+          </span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight" data-en="Contact Information" data-bn="জরুরি যোগাযোগ">
+            Contact Information
+          </h2>
+
+          <div class="space-y-4">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center shrink-0 mt-1">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm" data-en="Serial Helplines" data-bn="সিরিয়াল হেল্পলাইন">Serial Helplines</h4>
+                <p class="text-xs text-slate-600">Dhanmondi: 09611-778899</p>
+                <p class="text-xs text-slate-600">Chittagong: 09611-334455</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-1">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">WhatsApp Serial</h4>
+                <p class="text-xs text-slate-600">+8801711002233</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 mt-1">
+                <i data-lucide="facebook" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm" data-en="Official Facebook Page" data-bn="অফিসিয়াল ফেসবুক পেজ">Official Facebook Page</h4>
+                <a href="https://facebook.com" target="_blank" class="text-xs text-sky-600 hover:underline">facebook.com/drwalimassud.skin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Map Embed -->
+        <div class="lg:col-span-7">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 h-[380px]">
+            <iframe title="Chamber Map Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902442430138!2d90.3754!3d23.7509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cfffff1%3A0x1029837482!2sDhanmondi%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1650000000000!5m2!1sen!2sbd" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+        
+        <div class="space-y-3">
+          <h3 class="text-white font-bold text-lg">Dr. Wali Uddin Masud</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Consultant Dermatologist & Venereologist. Dedicated to evidence-based skincare, hair restoration, and sexual health.
+          </p>
+          <span class="inline-block px-2.5 py-1 bg-slate-800 text-sky-400 text-xs font-mono rounded">
+            BMDC Reg: A-54892
+          </span>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3" data-en="Quick Links" data-bn="দ্রুত লিঙ্ক">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#about" class="hover:text-white transition">About Doctor</a></li>
+            <li><a href="#chambers" class="hover:text-white transition">Chamber Timings</a></li>
+            <li><a href="#services" class="hover:text-white transition">Dermatology Services</a></li>
+            <li><a href="#blogs" class="hover:text-white transition">Health Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3" data-en="Services" data-bn="সেবাসমূহ">Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-white transition">Acne & Scar Treatment</a></li>
+            <li><a href="#services" class="hover:text-white transition">PRP Hair Growth</a></li>
+            <li><a href="#services" class="hover:text-white transition">Fungal & Ringworm Care</a></li>
+            <li><a href="#services" class="hover:text-white transition">STD / STI Confidential Care</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3" data-en="Medical Disclaimer" data-bn="মেডিকেল ডিসক্লেইমার">Medical Disclaimer</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Information on this website is for educational purposes and should not replace clinical diagnosis. Consult directly for personalized medical prescriptions.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4 text-center">
+        <p>&copy; 2026 Dr. Wali Uddin Masud. All Rights Reserved.</p>
+        <p>Built for Healthcare Excellence in Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY BOTTOM ACTION BAR FOR MOBILE DEVICES -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-slate-200 p-3 sm:hidden flex items-center gap-3 floating-action-bar">
+    <a href="tel:09611778899" class="flex-1 py-3 bg-brand-primary text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 shadow">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      <span data-en="Call Helpline" data-bn="কল করুন">Call Helpline</span>
+    </a>
+    <a href="https://wa.me/8801711002233" target="_blank" class="flex-1 py-3 bg-emerald-500 text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 shadow">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      <span data-en="WhatsApp Serial" data-bn="হোয়াটসঅ্যাপ">WhatsApp Serial</span>
+    </a>
+  </div>
+
+  <!-- MODALS -->
+  <!-- 1. Info / Details Modal -->
+  <div id="info-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeInfoModal()" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-700 rounded-full hover:bg-slate-100">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <h3 id="modal-title" class="font-extrabold text-xl text-slate-900 mb-4 pr-8">Modal Title</h3>
+      <div id="modal-body">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Appointment Success Confirmation Modal -->
+  <div id="appointment-success-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl text-center space-y-4">
+      <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-2xl font-bold">
+        <i data-lucide="check-circle" class="w-10 h-10"></i>
+      </div>
+      <h3 class="font-extrabold text-xl text-slate-900" data-en="Serial Request Generated!" data-bn="সিরিয়াল রিকোয়েস্ট তৈরি হয়েছে!">
+        Serial Request Generated!
+      </h3>
+      <p class="text-xs text-slate-600 leading-relaxed" data-en="Your appointment details have been prepared. Click below to automatically send your request to our WhatsApp chamber manager for instant serial confirmation." data-bn="আপনার সিরিয়ালের তথ্য তৈরি করা হয়েছে। নিচে ক্লিক করে এখনই হোয়াটসঅ্যাপে পাঠিয়ে সিরিয়াল নিশ্চিত করুন।">
+        Your appointment details have been prepared. Click below to automatically send your request to our WhatsApp chamber manager for instant serial confirmation.
+      </p>
+      <div class="space-y-2 pt-2">
+        <a id="modal-wa-btn" href="#" target="_blank" onclick="closeSuccessModal()" class="w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm rounded-xl transition flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span data-en="Open WhatsApp & Confirm" data-bn="হোয়াটসঅ্যাপে পাঠিয়ে কনফার্ম করুন">Open WhatsApp & Confirm</span>
+        </a>
+        <button onclick="closeSuccessModal()" class="w-full py-2 bg-slate-100 text-slate-700 font-semibold text-xs rounded-xl hover:bg-slate-200">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
